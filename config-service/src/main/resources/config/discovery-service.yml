@@ -1,0 +1,24 @@
+server:
+  port: 8061
+spring:
+  security:
+    user:
+      name: eureka
+      password: password
+eureka:
+  instance:
+    hostname: localhost
+    metadata-map:
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8061/eureka/
+management:
+  endpoints:
+    web.exposure.include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

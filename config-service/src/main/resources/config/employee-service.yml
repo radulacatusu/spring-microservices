@@ -1,0 +1,25 @@
+server:
+  port: 8090
+
+spring:
+  security:
+    user:
+      name: employee
+      password: password
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:password@localhost:8061/eureka/
+  instance:
+    hostname: localhost
+    metadata-map:
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
