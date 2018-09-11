@@ -8,6 +8,8 @@ spring:
 eureka:
   instance:
     hostname: localhost
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
     metadata-map:
       user.name: ${spring.security.user.name}
       user.password: ${spring.security.user.password}

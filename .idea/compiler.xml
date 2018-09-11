@@ -9,11 +9,14 @@
         <module name="admin-server" />
         <module name="configservice" />
         <module name="discoveryservice" />
-        <module name="employee-service" />
+        <module name="gateway-service" />
+        <module name="person-db-service" />
+        <module name="person-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="employe-eservice" target="1.5" />
+      <module name="employee-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

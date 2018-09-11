@@ -5,5 +5,8 @@
     <file url="file://$PROJECT_DIR$/config-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/discovery-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/employee-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/person-db-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/person-service" charset="UTF-8" />
   </component>
 </project>
